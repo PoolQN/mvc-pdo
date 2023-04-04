@@ -1,6 +1,6 @@
 <?php
 
-require_once "./conexion.php";
+require_once "conexion.php";
 
 //Modelo = contiene la lógica
 //extends : Herencia (POO) en PHP  

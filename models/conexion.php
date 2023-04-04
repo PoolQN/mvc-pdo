@@ -27,7 +27,7 @@ class Conexion{
   public function getConexion(){
     try{
       //Pasaremos la conexión al atributo/objeto $po
-      $this->pdo = $this->conectarServidor():
+      $this->pdo = $this->conectarServidor();
 
       //Controlar los errores (será controlado por TRY-CATCH)
       $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
