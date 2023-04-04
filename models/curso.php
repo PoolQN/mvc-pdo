@@ -11,8 +11,8 @@ class Curso extends Conexion{
   private $accesoBD;
 
   //Constructor
-  public function _CONSTRUCT(){
-    $this-> accesoBD = parent::getConexion();
+  public function __CONSTRUCT(){
+    $this->accesoBD = parent::getConexion();
   }
 
   //Método listar cursos

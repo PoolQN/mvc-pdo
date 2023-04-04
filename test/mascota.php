@@ -1,6 +1,6 @@
 <?php
 
-class Mascota{
+class Mascoa{
   private $nombre;
   private $tipo;
   private $sexo;
@@ -20,7 +20,7 @@ class Mascota{
   }
 }
 
-$mascota1 = new Mascota("Firulais", "Perro", "Macho", "40 kg");
+$mascota1 = new Mascota("Firulais", "Perro", "Macho", "40");
 
 echo $mascota1->__GET("nombre");
 echo $mascota1->__GET("tipo");

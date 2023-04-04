@@ -17,7 +17,7 @@ class Conexion{
   //Constructor:
   //new PDO("CADENA_CONEXION", "USER", "PASSWORD"); 
   private function conectarServidor(){
-    $conexion = new PDO("mysql:host={$this->host};port={$this->port};bdname={$this->database};charset={$this->charset}", $this->user,
+    $conexion = new PDO("mysql:host={$this->host};port={$this->port};dbname={$this->database};charset={$this->charset}", $this->user,
                         $this->password);
 
     return $conexion;
@@ -32,6 +32,7 @@ class Conexion{
       //Controlar los errores (será controlado por TRY-CATCH)
       $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       //Retornamos la conexión al modelo que lo necesite
+      return $this->pdo;
     }
     catch(Exception $e){
       die($e->getMessage());
